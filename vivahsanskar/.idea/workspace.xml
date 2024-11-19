@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="12857031-6e68-4d2a-9f18-dd88675aa395" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../NasaSpringBootProject/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../NasaSpringBootProject/nasa/src/main/java/com/example/demo/controllers/ImageryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../NasaSpringBootProject/nasa/src/main/java/com/example/demo/entity/Resource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../NasaSpringBootProject/nasa/src/main/java/com/example/demo/entity/Root.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../NasaSpringBootProject/nasa/src/main/java/com/example/demo/services/GetEarthImagery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2oRRaIGzPLXkBBBaS1DwQyzuF7h" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "C:/Users/lkjos/OneDrive/Desktop/SpringBootLearning/vivahsanskar/vivahsanskar/src/main/java/com/vivahsanskar/vivahsanskar",
+    "last_opened_file_path": "C:/Users/lkjos/OneDrive/Desktop/SpringBootLearning/vivahsanskar/EmployeeSpringBoot",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lkjos\OneDrive\Desktop\SpringBootLearning\vivahsanskar\vivahsanskar\src\main\resources" />
+      <recent name="C:\Users\lkjos\OneDrive\Desktop\SpringBootLearning\vivahsanskar\vivahsanskar" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vivahsanskar.vivahsanskar.services" />
+      <recent name="com.vivahsanskar.vivahsanskar.repository" />
+      <recent name="com.vivahsanskar.vivahsanskar.controllers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.vivahsanskar.vivahsanskar.VivahSanskarApplication">
+    <configuration name="Trial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Trial" />
+      <module name="vivahsanskar" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.vivahsanskar.vivahsanskar.VivahSanskarApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vivahsanskar.vivahsanskar.VivahSanskarApplication" />
+      <module name="vivahsanskar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vivahsanskar.vivahsanskar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserNameTest.userName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vivahsanskar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vivahsanskar.vivahsanskar.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vivahsanskar.vivahsanskar.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.vivahsanskar.vivahsanskar.tests.UserNameTest" />
+      <option name="METHOD_NAME" value="userName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTestByMockito.testUserByMocks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vivahsanskar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vivahsanskar.vivahsanskar.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vivahsanskar.vivahsanskar.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.vivahsanskar.vivahsanskar.tests.UserTestByMockito" />
+      <option name="METHOD_NAME" value="testUserByMocks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VivahsanskarApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vivahsanskar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vivahsanskar.vivahsanskar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vivahsanskar.vivahsanskar" />
+      <option name="MAIN_CLASS_NAME" value="com.vivahsanskar.vivahsanskar.VivahsanskarApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.vivahsanskar.vivahsanskar.VivahSanskarApplication" />
+        <item itemvalue="JUnit.UserTestByMockito.testUserByMocks" />
+        <item itemvalue="JUnit.UserNameTest.userName" />
+        <item itemvalue="Application.Trial" />
+        <item itemvalue="JUnit.VivahsanskarApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12857031-6e68-4d2a-9f18-dd88675aa395" name="Changes" comment="" />
+      <created>1730830467398</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730830467398</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vivahsanskar/vivahsanskar/services/AspirantDetailsService.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vivahsanskar/vivahsanskar/controllers/PublicController.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vivahsanskar/vivahsanskar/services/UsersService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
