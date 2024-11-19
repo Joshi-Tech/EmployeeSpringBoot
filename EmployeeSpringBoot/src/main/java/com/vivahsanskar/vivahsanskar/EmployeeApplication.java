@@ -11,19 +11,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @EnableTransactionManagement
 class EmployeeApplication {
-
-
-
     public static void main(String[] args) {
         SpringApplication.run(EmployeeApplication.class, args);
     }
-
 
     @Bean
     public PlatformTransactionManager add(MongoDatabaseFactory mongoDatabaseFactory) {
         return new MongoTransactionManager(mongoDatabaseFactory);
     }
-
-
-
 }
