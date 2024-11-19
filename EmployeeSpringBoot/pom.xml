@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.vivahsanskar</groupId>
+    <artifactId>vivahsanskar</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>vivahsanskar</name>
+    <description>Demo project for Spring Boot</description>
+    <url/>
+    <licenses>
+        <license/>
+    </licenses>
+    <developers>
+        <developer/>
+    </developers>
+    <scm>
+        <connection/>
+        <developerConnection/>
+        <tag/>
+        <url/>
+    </scm>
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+
+    <dependencies>
+        <!-- Spring Boot Web Starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Spring Boot MongoDB Starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
+        <!-- Lombok for reducing boilerplate code -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- Spring Boot Test Starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Below dependancy adds the spring security framework -->
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!--Below dependency used to set up .env pattern. With which credential can be prevented to push to
+        git repository-->
+        <dependency>
+            <groupId>io.github.cdimascio</groupId>
+            <artifactId>dotenv-java</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+
+
+
+    </dependencies>
+
+
+    <!--	<dependencies>-->
+    <!--		-->
+    <!--		-->
+    <!--		-->
+    <!--		-->
+    <!--		<dependency>-->
+    <!--			<groupId>org.springframework.boot</groupId>-->
+    <!--			<artifactId>spring-boot-starter-web</artifactId>-->
+    <!--		</dependency>-->
+
+    <!--		<dependency>-->
+    <!--			<groupId>org.projectlombok</groupId>-->
+    <!--			<artifactId>lombok</artifactId>-->
+    <!--			<optional>true</optional>-->
+    <!--		</dependency>-->
+    <!--		<dependency>-->
+    <!--			<groupId>org.springframework.boot</groupId>-->
+    <!--			<artifactId>spring-boot-starter-test</artifactId>-->
+    <!--			<scope>test</scope>-->
+    <!--		</dependency>-->
+    <!--&lt;!&ndash;		 https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test &ndash;&gt;-->
+    <!--&lt;!&ndash;		<dependency>&ndash;&gt;-->
+    <!--&lt;!&ndash;			<groupId>org.springframework.boot</groupId>&ndash;&gt;-->
+    <!--&lt;!&ndash;			<artifactId>spring-boot-starter-test</artifactId>&ndash;&gt;-->
+    <!--&lt;!&ndash;			<version>3.3.5</version>&ndash;&gt;-->
+    <!--&lt;!&ndash;			<scope>test</scope>&ndash;&gt;-->
+    <!--&lt;!&ndash;		</dependency>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;		&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.data/spring-data-mongodb &ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;		<dependency>&ndash;&gt;-->
+    <!--&lt;!&ndash;			<groupId>org.springframework.data</groupId>&ndash;&gt;-->
+    <!--&lt;!&ndash;			<artifactId>spring-data-mongodb</artifactId>&ndash;&gt;-->
+    <!--&lt;!&ndash;			<version>4.3.5</version>&ndash;&gt;-->
+    <!--&lt;!&ndash;		</dependency>&ndash;&gt;-->
+    <!--		<dependency>-->
+    <!--&lt;!&ndash;			<version>3.1.4</version>&ndash;&gt;-->
+    <!--			<groupId>org.springframework.boot</groupId>-->
+    <!--			<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
+    <!--		</dependency>-->
+
+    <!--		<dependency>-->
+    <!--			<groupId>org.mongodb</groupId>-->
+    <!--			<artifactId>mongodb-driver-sync</artifactId>-->
+    <!--			<version>5.2.0</version>-->
+    <!--		</dependency>-->
+    <!--	</dependencies>-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
