@@ -19,5 +19,4 @@ class EmployeeApplication {
     public PlatformTransactionManager add(MongoDatabaseFactory mongoDatabaseFactory) {
         return new MongoTransactionManager(mongoDatabaseFactory);
     }
-
 }

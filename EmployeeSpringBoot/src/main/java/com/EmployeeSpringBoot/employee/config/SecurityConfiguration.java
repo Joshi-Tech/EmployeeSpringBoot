@@ -15,22 +15,10 @@ import org.springframework.security.web.SecurityFilterChain;
 import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
-public class  SecurityConfiguration {
+public class SecurityConfiguration {
 
     @Autowired
     private UserDetailsImplementationService userDetailsImplementationService;
-
-   /* @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
-                .authorizeHttpRequests(authz -> authz
-                        .requestMatchers("/aspirants/**","/user/**").authenticated()
-                        .anyRequest().permitAll()
-                )
-                .httpBasic(withDefaults())
-                .csrf(csrf -> csrf.disable());
-        return http.build();
-    }*/
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -62,9 +50,4 @@ public class  SecurityConfiguration {
                 .passwordEncoder(passwordEncoder());
         return authenticationManagerBuilder.build();
     }
-
-//    @Override
-//    protected void configure(AuthenticationManagerBuilder auth) throws Exception{
-//        auth.userDetailsService(userDetailsImplementationService).passwordEncoder(passwordEncoder());
-//    }
 }
