@@ -42,5 +42,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: vivahsanskar-jar
+          name: employee-jar
           path: target/*.jar
