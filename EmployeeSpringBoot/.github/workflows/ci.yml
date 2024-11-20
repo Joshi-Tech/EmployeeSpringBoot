@@ -24,21 +24,34 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Step 3: Install Maven dependencies (skip tests to save time during install)
+      # Step 3: Clean workspace
+      - name: Clean workspace
+        run: rm -rf target/
+
+      # Step 4: Cache Maven dependencies
+      - name: Cache Maven Dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-maven
+
+      # Step 5: Install Maven dependencies (skip tests to save time during install)
       - name: Install dependencies
         run: mvn install -DskipTests
 
-      # Step 4: Run tests (relying on Maven's surefire exclusion rules)
+      # Step 6: Run tests (relying on Maven's surefire exclusion rules)
       - name: Run tests
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
         run: mvn test
 
-      # Step 5: Package the application
+      # Step 7: Package the application
       - name: Package application
-        run: mvn package -DskipTests
+        run: mvn package -DskipTests -X
 
-      # Step 6: Upload the build artifact (optional)
+      # Step 8: Upload the build artifact (optional)
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
