@@ -24,13 +24,12 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-     - name: Clean Maven Cache
-       run: mvn clean
-
-
       # Step 3: Install Maven dependencies (skip tests to save time during install)
       - name: Install dependencies
         run: mvn install -DskipTests
+      - name: Clean Maven Cache
+        run: mvn clean
+  
 
       # Step 4: Run tests (relying on Maven's surefire exclusion rules)
       - name: Run tests
