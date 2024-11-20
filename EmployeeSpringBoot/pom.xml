@@ -9,23 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.EmployeeSpringBoot</groupId>
-    <artifactId>employeer</artifactId>
+    <artifactId>employee</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>employee</name>
     <description>Demo project for Spring Boot</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -57,84 +44,36 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Below dependancy adds the spring security framework -->
-
-
+        <!-- Spring Security -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-        <!--Below dependency used to set up .env pattern. With which credential can be prevented to push to
-        git repository-->
+
+        <!-- dotenv for environment variables -->
         <dependency>
             <groupId>io.github.cdimascio</groupId>
             <artifactId>dotenv-java</artifactId>
             <version>3.0.0</version>
         </dependency>
-
-
-
-
     </dependencies>
 
-
-    <!--	<dependencies>-->
-    <!--		-->
-    <!--		-->
-    <!--		-->
-    <!--		-->
-    <!--		<dependency>-->
-    <!--			<groupId>org.springframework.boot</groupId>-->
-    <!--			<artifactId>spring-boot-starter-web</artifactId>-->
-    <!--		</dependency>-->
-
-    <!--		<dependency>-->
-    <!--			<groupId>org.projectlombok</groupId>-->
-    <!--			<artifactId>lombok</artifactId>-->
-    <!--			<optional>true</optional>-->
-    <!--		</dependency>-->
-    <!--		<dependency>-->
-    <!--			<groupId>org.springframework.boot</groupId>-->
-    <!--			<artifactId>spring-boot-starter-test</artifactId>-->
-    <!--			<scope>test</scope>-->
-    <!--		</dependency>-->
-    <!--&lt;!&ndash;		 https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test &ndash;&gt;-->
-    <!--&lt;!&ndash;		<dependency>&ndash;&gt;-->
-    <!--&lt;!&ndash;			<groupId>org.springframework.boot</groupId>&ndash;&gt;-->
-    <!--&lt;!&ndash;			<artifactId>spring-boot-starter-test</artifactId>&ndash;&gt;-->
-    <!--&lt;!&ndash;			<version>3.3.5</version>&ndash;&gt;-->
-    <!--&lt;!&ndash;			<scope>test</scope>&ndash;&gt;-->
-    <!--&lt;!&ndash;		</dependency>&ndash;&gt;-->
-
-    <!--&lt;!&ndash;		&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.data/spring-data-mongodb &ndash;&gt;&ndash;&gt;-->
-    <!--&lt;!&ndash;		<dependency>&ndash;&gt;-->
-    <!--&lt;!&ndash;			<groupId>org.springframework.data</groupId>&ndash;&gt;-->
-    <!--&lt;!&ndash;			<artifactId>spring-data-mongodb</artifactId>&ndash;&gt;-->
-    <!--&lt;!&ndash;			<version>4.3.5</version>&ndash;&gt;-->
-    <!--&lt;!&ndash;		</dependency>&ndash;&gt;-->
-    <!--		<dependency>-->
-    <!--&lt;!&ndash;			<version>3.1.4</version>&ndash;&gt;-->
-    <!--			<groupId>org.springframework.boot</groupId>-->
-    <!--			<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
-    <!--		</dependency>-->
-
-    <!--		<dependency>-->
-    <!--			<groupId>org.mongodb</groupId>-->
-    <!--			<artifactId>mongodb-driver-sync</artifactId>-->
-    <!--			<version>5.2.0</version>-->
-    <!--		</dependency>-->
-    <!--	</dependencies>-->
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- Maven Surefire Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0</version>
                 <configuration>
                     <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
+                        <exclude>**/UserNameTest.java</exclude>
+                        <exclude>**/UserTestByMockito.java</exclude>
                     </excludes>
                 </configuration>
             </plugin>

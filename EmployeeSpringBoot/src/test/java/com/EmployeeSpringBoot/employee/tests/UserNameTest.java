@@ -1,10 +1,10 @@
-package com.vivahsanskar.vivahsanskar.tests;
+package com.EmployeeSpringBoot.employee.tests;
 
 
-import com.vivahsanskar.vivahsanskar.entity.EmployeeDetails;
-import com.vivahsanskar.vivahsanskar.repository.IUsersRepository;
-import com.vivahsanskar.vivahsanskar.services.EmployeeDetailsService;
-import com.vivahsanskar.vivahsanskar.services.UsersService;
+import com.EmployeeSpringBoot.employee.entity.EmployeeDetails;
+import com.EmployeeSpringBoot.employee.repository.IUsersRepository;
+import com.EmployeeSpringBoot.employee.services.EmployeeDetailsService;
+import com.EmployeeSpringBoot.employee.services.UsersService;
 import org.bson.types.ObjectId;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,9 +34,5 @@ class UserNameTest {
         assertEquals("Electrician", ram.stream().map(x -> x.getProfession())
                 .collect(Collectors.toList())
                 .get(0));
-
-
-        // System.out.println("*****"+iUsersRepository.findByUserName("Ram"));
-        // assertEquals("Ram",iUsersRepository.findByUserName(usersService.findByUserName()));
     }
 }

@@ -1,11 +1,11 @@
-package com.vivahsanskar.vivahsanskar.controllers;
+package com.EmployeeSpringBoot.employee.controllers;
 
-import com.vivahsanskar.vivahsanskar.entity.EmployeeDetails;
-import com.vivahsanskar.vivahsanskar.entity.Users;
-import com.vivahsanskar.vivahsanskar.repository.IEmployeeDetails;
-import com.vivahsanskar.vivahsanskar.repository.IUsersRepository;
-import com.vivahsanskar.vivahsanskar.services.EmployeeDetailsService;
-import com.vivahsanskar.vivahsanskar.services.UsersService;
+import com.EmployeeSpringBoot.employee.entity.EmployeeDetails;
+import com.EmployeeSpringBoot.employee.entity.Users;
+import com.EmployeeSpringBoot.employee.repository.IEmployeeDetails;
+import com.EmployeeSpringBoot.employee.repository.IUsersRepository;
+import com.EmployeeSpringBoot.employee.services.EmployeeDetailsService;
+import com.EmployeeSpringBoot.employee.services.UsersService;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -33,7 +33,7 @@ public class AspirantDetailsController {
     @GetMapping
     public ResponseEntity<?> getCompleteUsersDetails() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        String userName = authentication.getName(); // Retrieve authenticated user's username
+        String userName = authentication.getName();
         Users user = usersService.findByUserName(userName);
         List<EmployeeDetails> employeeDetails = user.getEmployeeDetailsList(); // Get aspirant's details
 

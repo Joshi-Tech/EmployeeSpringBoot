@@ -1,6 +1,6 @@
-package com.vivahsanskar.vivahsanskar.repository;
+package com.EmployeeSpringBoot.employee.repository;
 
-import com.vivahsanskar.vivahsanskar.entity.EmployeeDetails;
+import com.EmployeeSpringBoot.employee.entity.EmployeeDetails;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 

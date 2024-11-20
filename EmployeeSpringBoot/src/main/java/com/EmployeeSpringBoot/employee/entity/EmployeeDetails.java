@@ -1,4 +1,4 @@
-package com.vivahsanskar.vivahsanskar.entity;
+package com.EmployeeSpringBoot.employee.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

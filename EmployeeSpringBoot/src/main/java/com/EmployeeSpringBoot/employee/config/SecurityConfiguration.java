@@ -1,6 +1,6 @@
-package com.vivahsanskar.vivahsanskar.config;
+package com.EmployeeSpringBoot.employee.config;
 
-import com.vivahsanskar.vivahsanskar.services.UserDetailsImplementationService;
+import com.EmployeeSpringBoot.employee.services.UserDetailsImplementationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

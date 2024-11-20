@@ -1,18 +1,13 @@
-package com.vivahsanskar.vivahsanskar.tests;
+package com.EmployeeSpringBoot.employee.tests;
 
-import com.vivahsanskar.vivahsanskar.entity.Users;
-import com.vivahsanskar.vivahsanskar.repository.IUsersRepository;
-import com.vivahsanskar.vivahsanskar.services.UserDetailsImplementationService;
-import com.vivahsanskar.vivahsanskar.services.UsersService;
+import com.EmployeeSpringBoot.employee.entity.Users;
+import com.EmployeeSpringBoot.employee.repository.IUsersRepository;
+import com.EmployeeSpringBoot.employee.services.UserDetailsImplementationService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;

@@ -1,7 +1,7 @@
-package com.vivahsanskar.vivahsanskar.controllers;
+package com.EmployeeSpringBoot.employee.controllers;
 
-import com.vivahsanskar.vivahsanskar.entity.Users;
-import com.vivahsanskar.vivahsanskar.services.UsersService;
+import com.EmployeeSpringBoot.employee.entity.Users;
+import com.EmployeeSpringBoot.employee.services.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

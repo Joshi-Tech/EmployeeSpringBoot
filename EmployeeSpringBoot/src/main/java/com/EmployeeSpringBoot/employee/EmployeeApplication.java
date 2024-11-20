@@ -1,4 +1,4 @@
-package com.vivahsanskar.vivahsanskar;
+package com.EmployeeSpringBoot.employee;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

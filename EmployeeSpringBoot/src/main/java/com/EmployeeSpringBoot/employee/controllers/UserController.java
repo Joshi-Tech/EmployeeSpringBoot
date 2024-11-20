@@ -1,8 +1,9 @@
-package com.vivahsanskar.vivahsanskar.controllers;
+package com.EmployeeSpringBoot.employee.controllers;
 
-import com.vivahsanskar.vivahsanskar.entity.Users;
-import com.vivahsanskar.vivahsanskar.repository.IUsersRepository;
-import com.vivahsanskar.vivahsanskar.services.UsersService;
+import com.EmployeeSpringBoot.employee.entity.Users;
+import com.EmployeeSpringBoot.employee.repository.IUsersRepository;
+import com.EmployeeSpringBoot.employee.services.EmployeeDetailsService;
+import com.EmployeeSpringBoot.employee.services.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +12,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/user")
@@ -19,13 +19,16 @@ public class UserController {
     @Autowired
     private UsersService usersService;
 
+    @Autowired
+    private IUsersRepository iUsersRepository;
+
+    @Autowired
+    private EmployeeDetailsService employeeDetailsService;
+
     @GetMapping
     public List<Users> getAllUsers() {
         return usersService.getAll();
     }
-
-    @Autowired
-    private IUsersRepository iUsersRepository;
 
 
     @GetMapping("{userName}")

@@ -1,10 +1,10 @@
-package com.vivahsanskar.vivahsanskar;
+package com.EmployeeSpringBoot.employee;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class VivahsanskarApplicationTests {
+class EmployeeApplicationTests {
 
 	@Test
 	void contextLoads() {

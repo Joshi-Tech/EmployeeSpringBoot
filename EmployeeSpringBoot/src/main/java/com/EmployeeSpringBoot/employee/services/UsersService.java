@@ -1,7 +1,7 @@
-package com.vivahsanskar.vivahsanskar.services;
+package com.EmployeeSpringBoot.employee.services;
 
-import com.vivahsanskar.vivahsanskar.entity.Users;
-import com.vivahsanskar.vivahsanskar.repository.IUsersRepository;
+import com.EmployeeSpringBoot.employee.repository.IUsersRepository;
+import com.EmployeeSpringBoot.employee.entity.Users;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
