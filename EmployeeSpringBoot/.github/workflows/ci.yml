@@ -24,11 +24,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Step 3: Install Maven dependencies
+      # Step 3: Install Maven dependencies (skip tests to save time during install)
       - name: Install dependencies
         run: mvn install -DskipTests
 
-      # Step 4: Run tests with Maven
+      # Step 4: Run tests (relying on Maven's surefire exclusion rules)
       - name: Run tests
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
@@ -36,7 +36,7 @@ jobs:
 
       # Step 5: Package the application
       - name: Package application
-        run: mvn package
+        run: mvn package -DskipTests
 
       # Step 6: Upload the build artifact (optional)
       - name: Upload artifact
